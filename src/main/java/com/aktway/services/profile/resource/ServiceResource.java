@@ -5,7 +5,6 @@ import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.inject.Inject;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -35,8 +34,7 @@ public class ServiceResource {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/followersprofile")
-    public FollowersProfileData getFollowersProfileData(
-            @RequestParam("accessToken") String accessToken) {
+    public FollowersProfileData getFollowersProfileData(@RequestParam("accessToken") String accessToken) {
 
         followersProfileData.setProfileName("Narendra Manam");
         followersProfileData.setFollowersCount(10);
@@ -50,8 +48,7 @@ public class ServiceResource {
     }
 
     @RequestMapping("/followingprofile")
-    public FollowingProfileData getFollowingProfileData(
-            @RequestParam("accessToken") String accessToken) {
+    public FollowingProfileData getFollowingProfileData(@RequestParam("accessToken") String accessToken) {
 
         followingProfileData.setProfileName("Narendra Manam");
         followingProfileData.setFollowersCount(10);
@@ -64,8 +61,7 @@ public class ServiceResource {
     }
 
     @RequestMapping("/followeespost")
-    public FolloweesPostData getFolloweesPostData(
-            @RequestParam("accessToken") String accessToken) {
+    public FolloweesPostData getFolloweesPostData(@RequestParam("accessToken") String accessToken) {
 
         followeesPostData.setPostName("My new car");
         followeesPostData.setTagList(Arrays.asList("#Bangalore"));
@@ -84,8 +80,7 @@ public class ServiceResource {
     }
 
     @RequestMapping("/publicpost")
-    public MyPublicPostData getMyPublicPostData(
-            @RequestParam("accessToken") String accessToken) {
+    public MyPublicPostData getMyPublicPostData(@RequestParam("accessToken") String accessToken) {
 
         myPublicPostData.setPostName("Beautiful bird");
         myPublicPostData.setLikeCount(16392);
@@ -99,8 +94,7 @@ public class ServiceResource {
     }
 
     @RequestMapping("/privatepost")
-    public MyPrivatePostData getMyPrivatePostData(
-            @RequestParam("accessToken") String accessToken) {
+    public MyPrivatePostData getMyPrivatePostData(@RequestParam("accessToken") String accessToken) {
 
         myPrivatePostData.setPostName("Nice building");
         myPrivatePostData.setTagList(Arrays.asList("#Malaysia"));

@@ -1,9 +1,5 @@
 package com.aktway.services.profile.util;
 
-/**
- * Created by rames on 26-02-2019.
- */
-
 import org.apache.log4j.Logger;
 
 public class LogUtil {

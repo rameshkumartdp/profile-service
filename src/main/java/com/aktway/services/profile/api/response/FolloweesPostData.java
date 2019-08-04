@@ -1,12 +1,8 @@
 package com.aktway.services.profile.api.response;
 
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 
-/**
- * Created by rames on 04-08-2019.
- */
 @Component
 public class FolloweesPostData {
     private String postName;
